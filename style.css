@@ -509,6 +509,7 @@
   footer .flink{color:var(--red);text-decoration:none;}
   footer .flink:hover{text-shadow:0 0 8px var(--red-glow);}
 
+  /* ---------- RESPONSIVE: TABLET (≤860px) ---------- */
   @media (max-width:860px){
     .panel-grid{grid-template-columns:repeat(2,1fr);}
     nav ul{
@@ -522,9 +523,33 @@
     }
     nav ul.open{display:flex;}
     .burger{display:flex;}
+    .hero{padding:80px 24px 60px;}
+    .pd-body{grid-template-columns:1fr;}
   }
+
+  /* ---------- RESPONSIVE: SMALL TABLET / LARGE PHONE (≤640px) ---------- */
+  @media (max-width:640px){
+    .nav-wrap{padding:14px 18px;}
+    .hero{padding:56px 20px 44px;}
+    .hero .cta-row{flex-direction:column;align-items:stretch;}
+    .btn{text-align:center;}
+    .panel-section{padding-left:18px;padding-right:18px;}
+    .section-head h2{font-size:21px;}
+    .pd-top{padding:26px 22px 20px;flex-direction:column;align-items:flex-start;}
+    .pd-body{padding:22px;}
+    .product-hero{padding:24px 18px 44px;}
+    .crumb{padding:20px 18px 0;}
+  }
+
+  /* ---------- RESPONSIVE: PHONE (≤520px) ---------- */
   @media (max-width:520px){
     .panel-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:clamp(34px,13vw,52px);}
+    .hero .eyebrow{letter-spacing:3px;font-size:11px;}
+    .logo{font-size:18px;letter-spacing:2px;}
+    .catalog-item{padding:18px 16px;gap:16px;}
+    .item-main h3{font-size:19px;}
+    footer p{line-height:2.1;}
   }
 
   @media (prefers-reduced-motion: reduce){
